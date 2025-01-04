@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Días Naturales</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Días Naturales</h1>
+        <label for="fechaInicio">Fecha de inicio:</label>
+        <input type="date" id="fechaInicio">
+        
+        <label for="fechaFin">Fecha de fin:</label>
+        <input type="date" id="fechaFin">
+        
+        <button onclick="calcularDias()">Calcular</button>
+        
+        <p id="resultado"></p>
+    </div>
+
+    <footer>
+        <p>Hecho con <span class="heart">❤</span> por Erick VL</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

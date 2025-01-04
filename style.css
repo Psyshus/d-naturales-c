@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9faf7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 50px; /* Espacio de separación */
+    animation: slideUp 1s ease-out;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #ff6e14;
+    outline: none;
+}
+
+button {
+    background-color: #ff6e14;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: fadeIn 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+#resultado {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #333;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.heart {
+    color: #ff6e14;
+    font-size: 1.2rem;
+}
+
+/* Animación para hacer que la calculadora suba y se deslice */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animación para la aparición gradual */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Diseño responsive para dispositivos pequeños */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin-top: 20px; /* Ajuste del espacio superior */
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}
